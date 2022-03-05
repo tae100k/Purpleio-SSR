@@ -1,3 +1,5 @@
+@import url("//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
+
 html,
 body {
   padding: 0;
@@ -13,4 +15,6 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: "-apple-system", "BlinkMacSystemFont", "Apple SD Gothic Neo",
+    "Inter", "Spoqa Han Sans", sans-serif;
 }

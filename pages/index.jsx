@@ -1,6 +1,6 @@
 import axios from "axios";
+import Card from "../components/card/index";
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
 
 export default function Home() {
   const [stores, setStores] = useState([]);
@@ -13,9 +13,7 @@ export default function Home() {
   return (
     <div>
       {stores.map((store) => (
-        <div key={store.id} className="item">
-          {store.name}
-        </div>
+        <Card key={store.id} store={store} />
       ))}
     </div>
   );
