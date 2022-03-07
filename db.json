@@ -60,5 +60,9 @@
       "image": "https://s3.ap-northeast-2.amazonaws.com/images.brandsites/common-ground/uploads/00000000450.jpg",
       "thumb": "https://s3.ap-northeast-2.amazonaws.com/images.brandsites/common-ground/uploads/thumbs/450.jpg"
     }
-  ]
+  ],
+  "about": {
+    "title": "퍼플아이오는 뭐다?",
+    "content": "퍼플아이오는 행복이다!"
+  }
 }
