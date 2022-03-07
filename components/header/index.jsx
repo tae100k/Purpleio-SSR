@@ -5,9 +5,7 @@ const Header = () => (
   <>
     <Navbar bg="light" expand="lg" className="p-5">
       <Container>
-        <Navbar.Brand href="/" class="display-6s">
-          AWESOME FOOD STORE
-        </Navbar.Brand>
+        <Navbar.Brand href="/">AWESOME FOOD STORE</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="justify-content-end">
           <Nav>

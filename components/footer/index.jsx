@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <>
-      <div>footer</div>
+      <div>2022 김태희</div>
     </>
   );
 };

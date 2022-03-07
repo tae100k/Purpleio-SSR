@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "concurrently \"json-server -p 9000 db.json\" \"next dev\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
