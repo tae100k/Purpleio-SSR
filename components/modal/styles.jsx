@@ -24,11 +24,11 @@ export const popup = styled.div`
 `;
 export const popupHead = styled.div`
   width: 100%;
-  height: 50px;
   display: flex;
   align-items: center;
   color: white;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 12px 28px;
 `;
 export const headTitle = styled.span`
   font-size: 38px;
@@ -36,6 +36,12 @@ export const headTitle = styled.span`
   font-weight: 700;
   letter-spacing: -3px;
   text-align: center;
+`;
+
+export const closeBtn = styled.span`
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
 `;
 export const popupBody = styled.div`
   width: 100%;
@@ -53,18 +59,22 @@ export const bodyTitlebox = styled.div`
 export const bodyContentBox = styled.div`
   word-break: break-word;
   overflow-y: auto;
+  display: flex;
+  justify-content: center;
 `;
-export const popupFoot = styled.div`
+export const bodyContentImg = styled.img`
+  display: flex;
+  justify-content: center;
+`;
+export const popupFoot = styled.a`
   width: 100%;
   height: 50px;
-`;
-export const popBtn = styled.span`
-  display: inline-flex;
-  width: 50%;
-  height: 100%;
-  float: left;
+  display: ${({ url }) => (!url ? "none" : "flex")};
   justify-content: center;
-  align-items: center;
-  color: #ffffff;
   cursor: pointer;
+  color: white;
+  align-items: center;
+  &:hover {
+    color: white;
+  }
 `;
