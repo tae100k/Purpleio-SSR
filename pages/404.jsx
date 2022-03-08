@@ -10,7 +10,7 @@ const Custom404 = () => {
   return (
     <>
       <Error />
-      {/* {handleRoute()} */}
+      {handleRoute()}
     </>
   );
 };
