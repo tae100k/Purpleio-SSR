@@ -4,7 +4,6 @@ const Modal = ({ isClicked, setIsClicked, store }) => {
   const close = () => setIsClicked(false);
   const CUR_URL = store.url;
 
-  console.log("CUR_URL", CUR_URL);
   return (
     <>
       <S.popupWrapper isClicked={isClicked}>
@@ -26,7 +25,6 @@ const Modal = ({ isClicked, setIsClicked, store }) => {
           </S.popupBody>
           <S.popupFoot url={store.url} href={store.url} target="_blank">
             자세히 보기
-            {console.log(store.url)}
           </S.popupFoot>
         </S.popup>
       </S.popupWrapper>

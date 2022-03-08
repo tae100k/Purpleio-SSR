@@ -3,7 +3,7 @@ import * as S from "./styles";
 const Footer = () => {
   return (
     <>
-      <S.MainContainer>2022 김태희</S.MainContainer>
+      <S.MainContainer>푸터입니다. 2022 김태희</S.MainContainer>
     </>
   );
 };
