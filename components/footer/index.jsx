@@ -1,7 +1,9 @@
+import * as S from "./styles";
+
 const Footer = () => {
   return (
     <>
-      <div>2022 김태희</div>
+      <S.MainContainer>2022 김태희</S.MainContainer>
     </>
   );
 };
