@@ -8,7 +8,7 @@ export const popupWrapper = styled.div`
   height: 100%;
   z-index: 99;
   background: rgba(0, 0, 0, 0.5);
-  display: flex;
+  display: ${({ isClicked }) => (isClicked ? "flex" : "none")};
   justify-content: center;
   align-items: center;
 `;

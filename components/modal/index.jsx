@@ -4,7 +4,7 @@ const Modal = ({ isClicked, setIsClicked }) => {
   const close = () => setIsClicked(false);
   return (
     <>
-      <S.popupWrapper>
+      <S.popupWrapper isClicked={isClicked}>
         <S.popup>
           <S.popupHead>
             <S.headTitle>Purple IO</S.headTitle>
@@ -27,7 +27,9 @@ const Modal = ({ isClicked, setIsClicked }) => {
           </S.popupBody>
           <S.popupFoot>
             <S.popBtn id="confirm">확인</S.popBtn>
-            <S.popBtn id="close">창 닫기</S.popBtn>
+            <S.popBtn id="close" onClick={close}>
+              창 닫기
+            </S.popBtn>
           </S.popupFoot>
         </S.popup>
       </S.popupWrapper>

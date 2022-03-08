@@ -6,6 +6,7 @@ import Modal from "../modal/index";
 
 const Grid = () => {
   const [stores, setStores] = useState([]);
+  const [isClicked, setIsClicked] = useState(false);
 
   useEffect(() => {
     axios.get("http://localhost:9000/stores").then((data) => {
@@ -14,9 +15,10 @@ const Grid = () => {
   }, []);
   return (
     <>
+      <Modal isClicked={isClicked} setIsClicked={setIsClicked} />
       <div className={style.mainWrapper}>
         {stores.map((store) => (
-          <Card key={store.id} store={store} />
+          <Card key={store.id} store={store} setIsClicked={setIsClicked} />
         ))}
       </div>
     </>
