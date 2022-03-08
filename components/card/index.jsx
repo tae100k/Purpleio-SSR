@@ -6,7 +6,6 @@ import Modal from "../modal/index";
 const CardGrid = ({ store }) => {
   const [isClicked, setIsClicked] = useState(false);
   const open = () => setIsClicked(true);
-  const close = () => setIsClicked(false);
 
   return (
     <>

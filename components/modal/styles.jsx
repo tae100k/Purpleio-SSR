@@ -1,4 +1,6 @@
-.popupWrapper {
+import styled from "styled-components";
+
+export const popupWrapper = styled.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -9,9 +11,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.popup {
+`;
+export const popup = styled.div`
   width: 100%;
   z-index: 9999;
   margin: 40px;
@@ -20,44 +21,44 @@
   overflow: hidden;
   background-color: #63489a;
   box-shadow: 5px 10px 10px 1px rgba(0, 0, 0, 0.3);
-}
-.popupHead {
+`;
+export const popupHead = styled.div`
   width: 100%;
   height: 50px;
   display: flex;
   align-items: center;
   color: white;
   justify-content: center;
-}
-.headTitle {
+`;
+export const headTitle = styled.span`
   font-size: 38px;
   font-style: italic;
   font-weight: 700;
   letter-spacing: -3px;
   text-align: center;
-}
-.popupBody {
+`;
+export const popupBody = styled.div`
   width: 100%;
   background-color: #ffffff;
-}
-.bodyContent {
+`;
+export const bodyContent = styled.div`
   width: 100%;
   padding: 30px;
-}
-.bodyTitlebox {
+`;
+export const bodyTitlebox = styled.div`
   text-align: center;
   width: 100%;
   margin-bottom: 10px;
-}
-.bodyContentBox {
+`;
+export const bodyContentBox = styled.div`
   word-break: break-word;
   overflow-y: auto;
-}
-.popupFoot {
+`;
+export const popupFoot = styled.div`
   width: 100%;
   height: 50px;
-}
-.popBtn {
+`;
+export const popBtn = styled.span`
   display: inline-flex;
   width: 50%;
   height: 100%;
@@ -66,4 +67,4 @@
   align-items: center;
   color: #ffffff;
   cursor: pointer;
-}
+`;

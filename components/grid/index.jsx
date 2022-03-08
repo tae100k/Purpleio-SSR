@@ -6,9 +6,7 @@ import Modal from "../modal/index";
 
 const Grid = () => {
   const [stores, setStores] = useState([]);
-  const [isClicked, setIsClicked] = useState(false);
-  const open = () => setIsClicked(true);
-  const close = () => setIsClicked(false);
+
   useEffect(() => {
     axios.get("http://localhost:9000/stores").then((data) => {
       setStores(data.data);
