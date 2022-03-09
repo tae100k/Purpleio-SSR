@@ -16,6 +16,7 @@ export const popup = styled.div`
   width: 100%;
   z-index: 9999;
   margin: 40px;
+  max-width: 900px;
   background-color: #ffffff;
   border-radius: 10px;
   overflow: hidden;
@@ -28,7 +29,7 @@ export const popupHead = styled.div`
   align-items: center;
   color: white;
   justify-content: space-between;
-  padding: 12px 28px;
+  padding: 12px;
 `;
 export const headTitle = styled.span`
   font-size: 38px;
@@ -54,17 +55,32 @@ export const bodyContent = styled.div`
 export const bodyTitlebox = styled.div`
   text-align: center;
   width: 100%;
-  margin-bottom: 10px;
 `;
 export const bodyContentBox = styled.div`
   word-break: break-word;
   overflow-y: auto;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  padding: 1rem 4rem;
+  @media screen and (max-width: 768px) {
+    display: block;
+    padding: 0;
+  }
 `;
+
+export const bodyP = styled.p`
+  padding: 0 2rem;
+`;
+
 export const bodyContentImg = styled.img`
   display: flex;
   justify-content: center;
+  max-width: 300px;
+  max-height: 300px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: 0 auto;
+  }
 `;
 export const popupFoot = styled.a`
   width: 100%;
