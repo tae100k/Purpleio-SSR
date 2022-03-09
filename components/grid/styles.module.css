@@ -1,14 +1,21 @@
+.totalWrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .mainWrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 0 10rem;
+  padding: 10rem;
   gap: 2rem;
+  max-width: 1400px;
+  width: 100%;
 }
 
 @media (max-width: 992px) {
   .mainWrapper {
     grid-template-columns: repeat(2, 1fr);
-    padding: 4rem;
+    padding: 6rem;
   }
 }
 

@@ -2,7 +2,6 @@ import * as S from "./styles";
 
 const Modal = ({ isClicked, setIsClicked, store }) => {
   const close = () => setIsClicked(false);
-  const CUR_URL = store.url;
 
   return (
     <>
@@ -18,7 +17,7 @@ const Modal = ({ isClicked, setIsClicked, store }) => {
                 <h1>{store.name}</h1>
               </S.bodyTitlebox>
               <S.bodyContentBox>
-                <p>{store.description}</p>
+                <S.bodyP>{store.description}</S.bodyP>
                 <S.bodyContentImg src={store.image} />
               </S.bodyContentBox>
             </S.bodyContent>

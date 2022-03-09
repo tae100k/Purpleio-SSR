@@ -2,6 +2,7 @@ import styled, { keyframes } from "styled-components";
 
 export const ErrorPage = styled.div`
   display: flex;
+  height: 75vh;
   align-items: center;
   justify-content: center;
   padding: 100px;
