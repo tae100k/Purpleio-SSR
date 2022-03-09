@@ -31,14 +31,17 @@ export const TextWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
 `;
+
 export const CardWrapper = styled.div`
   display: flex;
   justify-content: center;
 `;
+
 export const Row = styled.div`
   display: flex;
   @media screen and (max-width: 991px) {
     display: block;
+    width: 70%;
   }
 `;
 

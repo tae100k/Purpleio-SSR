@@ -62,7 +62,37 @@
     }
   ],
   "about": {
-    "title": "퍼플아이오는 뭐다?",
-    "content": "퍼플아이오는 행복이다!"
+    "company": {
+      "img": "https://image.rocketpunch.com/company/118445/peopeulaio_logo_1625047614.png?s=400x400&t=inside",
+      "alt": "퍼플아이오 로고",
+      "content1": "퍼플아이오는 고객 경험을 첫번째 가치로 생각합니다.",
+      "content2": "퍼플아이오는 실패에 대한 두려움 없이 기술에 적응하여 이커머스 비즈니스를 리드합니다.",
+      "content3": "퍼플아이오는 기술을 기반으로 새로운 시도를 두려워하지 않고 함께 자라기를 추구합니다."
+    },
+    "card": [
+      {
+        "id": "1",
+        "img": "https://media.rocketpunch.com/images/2021/6/30/kolonsport-mobile_1625049240.jpg",
+        "alt": "kolon mall",
+        "title": "코오롱 FnC",
+        "desc": "코오롱FnC의 공식 패션몰을 개발/운영하고 있습니다.",
+        "btn": "https://www.kolonmall.com/"
+      },
+      {
+        "id": "2",
+        "img": "https://media.rocketpunch.com/images/2021/6/30/hiring_1625049258.jpg",
+        "alt": "hiring image",
+        "title": "현재 채용중",
+        "desc": "꾸준히 성장하는 팀을 추구합니다.",
+        "btn": "https://www.notion.so/Purple-IO-46bdd70844384d9ab0b7769f350ea071"
+      }
+    ],
+    "iframe": {
+      "id": "3",
+      "img": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.024367207513!2d127.05460885164584!3d37.50734343517297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca4147b32b6c5%3A0x61a5d9562e459706!2s17%EC%B8%B5%2C%20501%20Teheran-ro%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1646813316670!5m2!1sen!2skr",
+      "title": "오시는 길",
+      "desc": "서울 강남구 테헤란로501, 17층",
+      "btn": "mailto:hello@purple.io"
+    }
   }
 }
