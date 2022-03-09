@@ -12,13 +12,13 @@ const Grid = () => {
     });
   }, []);
   return (
-    <>
+    <div className={style.totalWrapper}>
       <div className={style.mainWrapper}>
         {stores.map((store) => (
           <Card key={store.id} store={store} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

@@ -2,25 +2,33 @@ import styled from "styled-components";
 
 export const Footer = styled.footer`
   display: flex;
-  flex-flow: row wrap;
   padding: 30px 30px 20px 30px;
   color: white;
+  justify-content: space-around;
   background-color: #63489a;
-  border-top: 1px solid #e5e5e5;
   width: 100%;
-  position: fixed;
+  height: 200px;
+  position: absolute;
   bottom: 0;
-  height: 400px;
   left: 0;
-  @media screen and (min-width: 24.375em) {
+  @media screen and (max-width: 991px) {
     position: relative;
+    justify-content: flex-start;
   }
 `;
 
 export const FooterAddressWrapper = styled.div`
-  margin-right: 1.25em;
-  margin-bottom: 2em;
+  margin-right: 1.25rem;
+  margin-bottom: 2rem;
+  @media screen and (max-width: 991px) {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
 `;
+
+export const FooterLeftWrapper = styled.div``;
 
 export const FooterLogo = styled.h1`
   font-family: "Pacifico", cursive;
@@ -29,13 +37,12 @@ export const FooterLogo = styled.h1`
 `;
 
 export const FooterContact = styled.h2`
-  margin-top: 1.3em;
+  margin-top: 1.3rem;
   font-size: 15px;
   font-weight: 400;
 `;
 
 export const FooterAddress = styled.address`
-  font-style: normal;
   color: #999;
 `;
 
@@ -45,52 +52,52 @@ export const FooterBtn = styled.a`
   justify-content: center;
   height: 36px;
   max-width: max-content;
-  background-color: #eee;
+  background-color: white;
   border-radius: 100px;
   color: black;
-  line-height: 0;
-  margin: 0.6em 0;
-  font-size: 1rem;
-  padding: 0 1.3em;
+  margin: 0.6rem 0;
+  padding: 0.6rem 1.3rem;
+  &:hover {
+    color: black;
+  }
 `;
 
 export const FooterNav = styled.ul`
   list-style: none;
-  padding-left: 0;
-  display: flex;
-  flex-flow: row wrap;
+  @media screen and (max-width: 991px) {
+    display: none;
+  }
 `;
 
 export const NavItem = styled.li`
-  line-height: 2em;
+  line-height: 2rem;
 `;
 
 export const NavTitle = styled.h2`
-  font-weight: 400;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 24px;
 `;
 
-export const NavUlExtra = styled.ul`
-  column-count: 2;
-  column-gap: 1.25em;
-`;
+export const NavUl = styled.li``;
 
-export const LegalLinks = styled.div`
-  display: flex;
-  align-items: center;
-  @media screen and (min-width: 24.375em) {
-    margin-left: auto;
+export const NavLi = styled.li`
+  list-style: none;
+`;
+export const NavLiA = styled.a`
+  font-style: italic;
+  &:hover {
+    background: #63489a;
+    color: #fff;
   }
 `;
+
 export const Legal = styled.div`
-  display: flex;
-  flex-wrap: wrap;
   color: #999;
-  @media screen and (min-width: 24.375em) {
-    margin-left: auto;
+  display: flex;
+  align-items: end;
+  @media screen and (max-width: 991px) {
+    display: none;
   }
 `;
 
-export const Heart = styled.span`
-  color: #2f2f2f;
-`;
+export const LegalP = styled.p``;
