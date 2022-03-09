@@ -6,7 +6,7 @@
 .mainWrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 0 10rem;
+  padding: 5rem 5rem;
   gap: 2rem;
   max-width: 1200px;
 }

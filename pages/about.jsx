@@ -1,4 +1,5 @@
 import React from "react";
+import About from "../components/about/index";
 
 export const getStaticProps = async () => {
   const res = await fetch("http://localhost:9000/about");
@@ -12,9 +13,7 @@ export const getStaticProps = async () => {
 export default function Home({ title, content }) {
   return (
     <>
-      <div>about screen</div>
-      <div>{title}</div>
-      <div>{content}</div>
+      <About />
     </>
   );
 }
