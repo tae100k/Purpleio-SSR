@@ -84,6 +84,6 @@ Purpleio-SSR
 
 ```
 
-## 📌 프로젝트 하면서 작성한 
+## 📌 프로젝트 하면서 작성한 블로그
 
 - [[Next.js, React]로 구현한 맛집 사이트](https://fallacious-smash-138.notion.site/Next-js-React-7fbb273f5c8345809bf55d3dbb386d1b)
